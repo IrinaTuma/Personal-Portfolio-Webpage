@@ -1,0 +1,271 @@
+* {
+  scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    color: #303030;
+
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, sans-serif;
+    background-color:rgb(255, 255, 255);
+  }
+  
+  h1 {
+    font-size: 5.2rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  p {
+    font-size: 1.8rem;
+  }
+  
+
+/*Navigation bar*/
+
+  #navbar {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: end;
+    background-color: #003333;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    box-shadow: 0px 0px 15px #1f2323;
+  }
+  
+  #navbar > ul {
+    display: flex;
+    margin-right: 10px;
+  }
+
+  #navbar > ul > li {
+    list-style-type: none;
+    font-size: 1.8rem;
+  }
+
+  #navbar > ul > li > a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    list-style-type: none;
+    padding: 2.0rem 1rem;
+  }
+
+  #navbar > ul > li:hover {
+    text-decoration: none;
+    background-color: #009999;
+  }
+
+
+  /*Main screen*/
+  
+  #welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(60deg, #881b1b 0%, #993333 100%);
+  }
+
+  #welcome-section > h1 {
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+
+  #welcome-section > p {
+    color:white;
+    background-color: #003333;
+    padding: 0.5rem 1rem;
+    margin: 1.8rem 0 0;
+    font-size: 2.4rem;
+  }
+
+
+  /*Projects*/
+  
+  #projects:before {
+    content: "";
+    display: block;
+    height: 30px;
+    padding-top: -30px;
+  }
+
+  #projects {
+    background-color: #339999;
+    margin: 0;
+    padding-top: 60px;
+  }
+
+  #projects > h2 {
+    margin: 0 auto 30px;
+  }
+
+  .project-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .project-grid > a {
+    background: #003333;
+    text-decoration: none;
+    color: white;
+  }
+
+  .project-grid > a > .project-image {
+    display: block;
+    overflow: clip;
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .description {
+    padding: 0.5rem 2rem;
+  }
+
+  .description .code {
+    color: #003333;
+    font-size: 1.3rem;
+    font-weight: 900;
+    transition: color 0.3s ease-out;
+  }
+
+  .project-grid a:hover .description .code {
+    color: #993333;
+  }
+
+  #links {
+    background-color: #009999;
+    padding-top: 30px;
+    padding-bottom: 70px;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+
+  #links > a {
+    color:#ffffff;
+    padding-bottom: 2px;
+    text-decoration: none;
+    border-bottom: 2px #ffffff dotted;
+  }
+
+  #links > a:hover {
+    color:#881b1b;
+    padding-bottom: 2px;
+    text-decoration: none;
+    border-bottom: 2px #881b1b dotted;
+    transition: 0.3s ease-out;
+  }
+
+
+  /*Contact*/
+
+  #contact {
+    background-color: #993333;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+  }
+
+  #contact h2 {
+    color:white;
+  }
+
+  .contact-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 750px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+    fill: white;
+  }
+
+  .social-link {
+    display: inline-block;
+    color: white;
+    font-weight: 400;
+    font-size: 2.4rem;
+    text-decoration: none;
+    align-items: center;
+    transition: transform 0.3s ease-out;
+  }
+
+  .social-link:hover {
+    transform: translateY(5px);
+  }
+
+  .line {
+    background-color: #003333;
+    height: 3px;
+    width: 100%;
+  }
+
+
+  /*Footer*/
+
+  #footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #993333;
+    height: 80px;
+  }
+
+  #footer > p {
+    text-align: center;
+    color: white;
+  }
+
+
+  /*Media*/
+
+  @media (max-width: 750px) {
+    h1 {
+        font-size: 3.4rem;
+      }
+      
+    h2 {
+        font-size: 2.4rem;
+      }
+
+    p {
+        font-size: 1.6rem;
+      }
+
+  }
